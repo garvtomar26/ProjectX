@@ -37,7 +37,7 @@ def convert_xml_to_json(input_file_path, output_file_path):
     json_data = {root.tag: {}}
     add_node_to_dict(root, json_data[root.tag])
 
-    # write JSON data to output file
+    # write JSON data to JSON file
     with open(output_file_path, "w") as f:
         json.dump(json_data, f, indent=4)
 
